@@ -203,8 +203,7 @@ public class LoginForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void LoginBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginBActionPerformed
-        String User = Username.getText();
-        String PASS = Pass.getText();
+
         try{
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/orphan","root","Root@123");
             PreparedStatement pst = conn.prepareStatement("SELECT * FROM Orphan.UserCredentials where Auser = ? and Password = ?");

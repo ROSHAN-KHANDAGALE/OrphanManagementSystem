@@ -65,8 +65,7 @@ public class DashBoard extends javax.swing.JFrame {
         EXITB.setBackground(new java.awt.Color(153, 153, 153));
         EXITB.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         EXITB.setForeground(new java.awt.Color(255, 102, 0));
-        EXITB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Assests/exit.png"))); // NOI18N
-        EXITB.setText("EXIT");
+        EXITB.setText("BACK");
         EXITB.setBorder(null);
         EXITB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,7 +148,7 @@ public class DashBoard extends javax.swing.JFrame {
                 .addComponent(LogoutB)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(EXITB)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
